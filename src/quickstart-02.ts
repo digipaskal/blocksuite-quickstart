@@ -25,9 +25,10 @@ function initEditor() {
 
   //const doc = createEmptyDoc().init();
 
-   const pageBlockId = doc.addBlock("affine:page", {
-    title: new Text("My first page"),
-  });
+   const pageBlockId = doc.addBlock("affine:page", {title: new Text("My first Blocksuite page"),});
+   const noteId = doc.addBlock('affine:note', {}, pageBlockId);
+   doc.addBlock('affine:paragraph', { text: new Text('Hello World!') }, noteId);
+
 
  
   const editor = new AffineEditorContainer();
