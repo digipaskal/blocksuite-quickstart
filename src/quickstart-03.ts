@@ -7,7 +7,9 @@ import { DocCollection, Text } from '@blocksuite/store';
 import { createEmptyDoc, EdgelessEditor, AffineEditorContainer } from '@blocksuite/presets';
 import { effects as blocksEffects } from "@blocksuite/blocks/effects";
 import { effects as presetsEffects } from "@blocksuite/presets/effects";
-import '@toeverything/theme/style.css';
+// ? import '@toeverything/theme/style.css';
+//import './style.css';
+import './style-local.css';
 
 blocksEffects();
 presetsEffects();

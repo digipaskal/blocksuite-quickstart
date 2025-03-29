@@ -5,9 +5,39 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
+    <script>
+
+          function injectScriptTag() {
+          console.log('url: ' + window.location.href);
+          params = new URLSearchParams(window.location.search);
+          has = params.has('sample');
+          sample = params.get('sample');
+            if (has) {
+              var s = document.createElement("script");
+              s.type = "module";
+              s.src = '/src/quickstart-' + sample + '.ts'
+              s.innerHTML = null;
+              s.id = "sample";
+              document.body.appendChild(s);
+            }  else {console.log('default sample')};
+
+          }
+
+          
+          function switchToSample(value) {
+            url = window.location.protocol + '//' + window.location.host + window.location.pathname + '?sample=' + value ;
+            console.log('switching to url: ' + url);
+            window.location.href = url;
+          }
+
+</script>
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/quickstart-03.ts"></script>
+  <body onload="injectScriptTag()">
+    <div id="toolbar" style="height:50px">
+      <a href="#" onclick="switchToSample('01')">01</a>
+      <a href="#" onclick="switchToSample('02')">02</a>
+      <a href="#" onclick="switchToSample('03')">03</a>
+    </div>
+    <div id="app" style="height:800px"></div>
   </body>
 </html>
