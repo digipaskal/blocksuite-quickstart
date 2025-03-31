@@ -28,12 +28,8 @@ function initEditor() {
   //const doc = createEmptyDoc().init();
 
   const pageBlockId = doc.addBlock("affine:page", {title: new Text("My first Blocksuite page"),});
-  //const noteId = doc.addBlock('affine:note', {}, pageBlockId);
-  //doc.addBlock('affine:paragraph', { text: new Text('Hello (Page) World!') }, noteId);
 
   const surfaceId = doc.addBlock("affine:surface", {}, pageBlockId);
-  //const surfTextId = doc.addBlock('affine:edgeless-text', {}, surfaceId);
-  //const surfParaId = doc.addBlock('affine:paragraph', { text: new Text('Hello (Edgeless) World!') }, surfTextId);
 
 
   const editor = new AffineEditorContainer();
