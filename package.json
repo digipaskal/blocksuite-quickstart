@@ -16,9 +16,6 @@
     "@blocksuite/blocks": "0.19.5",
     "@blocksuite/presets": "0.19.5",
     "@blocksuite/store": "0.19.5",
-    "@blocksuite/affine": "*",
-    "@blocksuite/integration-test": "*", 
-    "@shoelace-style/shoelace": "2.20.1",
     "y-indexeddb": "^9.0.12",
     "yjs": "^13.6.24"
   }
