@@ -8,8 +8,8 @@ blocksuite starter examples
 
 > npm install  
 > npm run dev  
-> /!\ You need to change CheckBoxC**k**eckSolidIcon to CheckBoxC**h**eckSolidIcon in @blocksuite dist files (5 files)
-http://localhost:5173/  
+> /!\ You need to change CheckBoxC**k**eckSolidIcon to CheckBoxC**h**eckSolidIcon in @blocksuite dist (package files) files (5 files)  
+> http://localhost:5173/  
 
 
 
