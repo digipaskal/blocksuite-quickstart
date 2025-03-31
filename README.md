@@ -1,5 +1,5 @@
 # blocksuite-quickstart
-blocksuite starter examples
+blocksuite (https://github.com/toeverything/blocksuite) starter examples for v0.9.5
 
 * quickstart-01 : PageEditor with empty document
 * quickstart-02 : PageEditor with sample document
