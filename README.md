@@ -6,10 +6,10 @@ blocksuite starter examples
 * quickstart-03 : EdgelessEditor (WIP, not working)
 
 
-> npm install
-> npm run dev
+> npm install  
+> npm run dev  
 > /!\ You need to change CheckBoxC**k**eckSolidIcon to CheckBoxC**h**eckSolidIcon in @blocksuite dist files (5 files)
-http://localhost:5173/
+http://localhost:5173/  
 
 
 
